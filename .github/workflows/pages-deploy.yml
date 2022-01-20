@@ -1,5 +1,0 @@
-name: "Automatic build"
-on:
-  push:
-    branches:
-      - master
