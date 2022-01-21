@@ -83,8 +83,9 @@ footer {
 
 .tab {
   display: none;
-  text-align: center;
-  height: max-content;
+  padding: 5% 8% 0 8%;
+  background-color: rgb(224, 224, 224);
+  height: 100%;
 }
 
 .default {
