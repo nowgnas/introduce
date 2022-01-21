@@ -7,37 +7,95 @@
     <link rel="stylesheet" href="style/index.css" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/skeleton.css" />
-    <script type="text/javascript" src="action/index.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/cf98ce5cbf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/public/action/index.js"></script>
     <title>Hello I'm Sangwon</title>
   </head>
   <body class="container">
     <header>header</header>
     <nav>
       <div class="main">
-        <!-- button group -->
-        <div class="mainContent sidebar">
-          <a class="button buttonTop" onclick="onDisplay()" href="">
-            <div class="buttonText">ABOUT</div>
-          </a>
-          <a class="button" onclick="onDisplay()" href="">
-            <div class="buttonText">INTERESTS</div>
-          </a>
-          <a class="button" onclick="onDisplay()" href="">
-            <div class="buttonText">AI TRACK</div>
-          </a>
-          <a class="button" onclick="onDisplay()" href="">
-            <div class="buttonText">TO RACER</div>
-          </a>
+        <div class="sidebar">
+          <!-- sidebar -->
+          <ul class="tabList">
+            <!-- button group -->
+            <li class="btn_list">
+              <a
+                class="button buttonTop"
+                href="javascript:"
+                onclick="javascript:showtab(0)"
+              >
+                <div class="buttonText0 buttonText">ABOUT</div>
+              </a>
+            </li>
+            <li class="btn_list">
+              <a
+                class="button"
+                href="javascript:"
+                onclick="javascript:showtab(1)"
+              >
+                <div class="buttonText1 buttonText">INTERESTS</div>
+              </a>
+            </li>
+            <li class="btn_list">
+              <a
+                class="button"
+                href="javascript:"
+                onclick="javascript:showtab(2)"
+              >
+                <div class="buttonText2 buttonText">AI TRACK</div>
+              </a>
+            </li>
+            <li class="btn_list">
+              <a
+                class="button"
+                href="javascript:"
+                onclick="javascript:showtab(3)"
+              >
+                <div class="buttonText3 buttonText">TO RACER</div>
+              </a>
+            </li>
+          </ul>
         </div>
+        <!-- content group -->
         <div class="mainContent">
-          <div class="buttonPaging">about</div>
-          <div class="buttonPaging">interests</div>
-          <div class="buttonPaging">ai track</div>
-          <div class="buttonPaging">to racers</div>
+          <div id="tab0" class="tab default">about</div>
+          <div id="tab1" class="tab">interests</div>
+          <div id="tab2" class="tab">ai track</div>
+          <div id="tab3" class="tab">to racers</div>
         </div>
       </div>
-      <div>div2</div>
     </nav>
-    <footer>footer</footer>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div>
+          <a class="icon" href="https://www.instagram.com/s.wlli/"
+            ><i class="fab fa-instagram fa-lg"></i
+          ></a>
+        </div>
+        <div>
+          <a class="icon" href="https://github.com/s-wlii"
+            ><i class="fab fa-github-square fa-lg"></i
+          ></a>
+        </div>
+        <div class="mail">
+          <div class="contact">contact:</div>
+          <div>
+            <a href="mailto:swlee0376@gmail.com">swlee0376@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

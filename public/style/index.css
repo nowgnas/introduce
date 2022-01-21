@@ -11,9 +11,8 @@ header {
   background-color: antiquewhite;
 }
 
-div {
-  border: 2px solid red;
-  margin: 3px;
+footer {
+  width: 100%;
 }
 
 .container {
@@ -32,27 +31,95 @@ div {
 
 .mainContent {
   display: inline;
+  background-color: rgb(250, 250, 250);
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f0ece3;
 }
 
 .button {
-  margin-bottom: 5vh;
-  width: 100%;
+  margin-bottom: 5%;
+  text-decoration: none;
 }
 
 .buttonText {
-  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-left: 10%;
+  height: 100%;
+  background-color: #96ceb4;
+  border-radius: 5px;
+}
+
+.buttonText:hover {
+  background-color: #87aaaa;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.buttonText:visited {
+  box-shadow: 10px #6d8299;
 }
 
 .buttonTop {
   margin-top: 40%;
 }
 
-.buttonPaging {
+.tabList {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30%;
+}
+
+.tab {
   display: none;
+  text-align: center;
+  height: max-content;
+}
+
+.default {
+  display: block;
+}
+
+.btn_list {
+  margin-bottom: 15%;
+  height: 10%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 5% 5% 1fr;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  align-content: center;
+  padding-left: 5%;
+  background-color: #d9d7f1;
+}
+
+.icon {
+  color: #6d8299;
+}
+
+.icon:hover {
+  color: #11324d;
+}
+
+.mail {
+  display: flex;
+  justify-content: right;
+  padding-right: 5%;
+}
+
+.contact {
+  padding-right: 0.7%;
 }
