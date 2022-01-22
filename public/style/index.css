@@ -35,6 +35,32 @@ footer {
   align-items: center;
 }
 
+@media (min-width: 360) and (max-width: 900) {
+  .container {
+    margin: 0 0 0 0;
+  }
+  header {
+    height: 10vh;
+  }
+  .header_text {
+    font-family: "Dongle", sans-serif;
+    font-size: 10px;
+  }
+  .buttonText {
+    padding-left: 5%;
+    font-size: 5px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 1fr;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    align-content: center;
+    padding-left: 1%;
+    background-color: #d9d7f1;
+  }
+}
+
 .main {
   display: grid;
   grid-template-columns: 20% 80%;
@@ -71,6 +97,8 @@ footer {
   border-radius: 5px;
   color: rgb(44, 60, 80);
   font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .buttonText:hover {

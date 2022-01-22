@@ -35,3 +35,12 @@
 .movie_ex {
   width: 100%;
 }
+
+/* @media (min-width: 360) and (max-width: 900) {
+  .category_title {
+    font-size: 18;
+  }
+  .element_name {
+    font-size: 7px;
+  }
+} */
