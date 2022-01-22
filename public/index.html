@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="/public/style/index.css" />
     <link rel="stylesheet" href="/public/style/content.css" />
     <!-- CSS only -->
     <link
@@ -18,6 +18,168 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="/public/action/index.js"></script>
+    <script>
+      function showtab(a) {
+        for (i = 0; i < 4; i++) {
+          let target = document.getElementById("tab" + i);
+
+          if (i == a) {
+            target.style.display = "block";
+          } else {
+            target.style.display = "none";
+          }
+        }
+      }
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        display: flex;
+        height: 20vh;
+        align-items: center;
+        justify-content: center;
+        background-color: antiquewhite;
+      }
+
+      footer {
+        width: 100%;
+      }
+
+      .container {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 80vh;
+      }
+
+      .mainContent {
+        overflow: auto;
+        display: inline;
+        background-color: rgb(224, 224, 224);
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0ece3;
+      }
+
+      .button {
+        margin-bottom: 5%;
+        text-decoration: none;
+      }
+
+      .buttonText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-left: 10%;
+        height: 100%;
+        background-color: #96ceb4;
+        border-radius: 5px;
+      }
+
+      .buttonText:hover {
+        background-color: #87aaaa;
+        transition-property: background-color;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+      }
+
+      .buttonText:visited {
+        box-shadow: 10px #6d8299;
+      }
+
+      .buttonTop {
+        margin-top: 40%;
+      }
+
+      .tabList {
+        /* overflow: hidden; */
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin-top: 30%;
+      }
+
+      .tab {
+        display: none;
+        padding: 5% 8% 3% 8%;
+        height: min-content;
+      }
+
+      .default {
+        display: block;
+      }
+
+      .btn_list {
+        margin-bottom: 15%;
+        height: 10%;
+      }
+
+      .footer {
+        display: grid;
+        grid-template-columns: 5% 5% 1fr;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        align-content: center;
+        padding-left: 5%;
+        background-color: #d9d7f1;
+      }
+
+      .icon {
+        color: #6d8299;
+      }
+
+      .icon:hover {
+        color: #11324d;
+      }
+
+      .mail {
+        display: flex;
+        justify-content: right;
+        padding-right: 5%;
+      }
+
+      .contact {
+        padding-right: 0.7%;
+      }
+
+      .category {
+        margin: 0 0 5% 0;
+      }
+      .category_title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .element_group {
+        padding: 2% 3% 0 3%;
+      }
+      .element_name {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .explain {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+
     <title>Hello I'm Sangwon</title>
   </head>
   <body class="container">
