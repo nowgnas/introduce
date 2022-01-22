@@ -32,7 +32,7 @@ footer {
 .mainContent {
   overflow: auto;
   display: inline;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(224, 224, 224);
 }
 
 .sidebar {
@@ -85,7 +85,6 @@ footer {
 .tab {
   display: none;
   padding: 5% 8% 3% 8%;
-  background-color: rgb(224, 224, 224);
   height: min-content;
 }
 
