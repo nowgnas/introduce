@@ -11,6 +11,10 @@ header {
   justify-content: center;
   background-color: antiquewhite;
 }
+.header_text {
+  font-family: "Dongle", sans-serif;
+  font-size: 30px;
+}
 .profile {
   width: 40%;
   height: auto;
@@ -40,7 +44,7 @@ footer {
 .mainContent {
   overflow: auto;
   display: inline;
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(245, 245, 245);
 }
 
 /* TODO: 화면 비율 따라 너비 조정 */
@@ -61,10 +65,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding-left: 10%;
+  padding-left: 8%;
   height: 100%;
-  background-color: #96ceb4;
+  background-color: #c8e2d6;
   border-radius: 5px;
+  color: rgb(44, 60, 80);
+  font-family: "Roboto Mono", monospace;
 }
 
 .buttonText:hover {
@@ -108,7 +114,7 @@ footer {
 
 .footer {
   display: grid;
-  grid-template-columns: 3% 3% 1fr;
+  grid-template-columns: 3% 3% 3% 1fr;
   padding-top: 2%;
   padding-bottom: 2%;
   align-content: center;
